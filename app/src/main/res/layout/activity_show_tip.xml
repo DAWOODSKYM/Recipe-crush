@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowTipActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/lightboard">
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:onClick="delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginStart="120dp"
+        android:background="#ff0e0e"
+        android:text="Delete"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/searchbtn"
+        android:onClick="search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="10dp"
+        android:background="#74dc2f"
+        android:text="SEARCH"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/inputId"
+        app:layout_constraintTop_toBottomOf="@+id/inputId" />
+
+    <EditText
+        android:id="@+id/inputId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="#f7f4f4"
+        android:ems="10"
+        android:hint="Enter Tip Number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textColor="#f9f5f5"
+        android:id="@+id/About2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchbtn" />
+
+    <TextView
+        android:textColor="#f2eeee"
+        android:id="@+id/Details2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Tip Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/About2" />
+</android.support.constraint.ConstraintLayout>

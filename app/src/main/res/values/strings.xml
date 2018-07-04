@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Recipe Crush Plus</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cuisine">CuisineActivity</string>
+    <string-array name="American_Cuisines">
+        <item>Fluffy Pancakes</item>
+        <item>Deveined Frozen Shrimps</item>
+        <item>Baked Cripsy Chicken Legs</item>
+        <item>Pinnaple Grilled Carrots</item>
+        <item>American Pie</item>
+    </string-array>
+    <string-array name="Breakfast">
+        <item>Fluffy pancakes</item>
+        <item>Vitumbua</item>
+        <item>Injera</item>
+    </string-array>
+
+    <string-array name="African_cuisines">
+        <item>Vitumbua</item>
+        <item>Injera</item>
+        <item>Bhajias</item>
+        <item>Ethiopian Lentil</item>
+        <item>Kelewele or Aloco</item>
+    </string-array>
+    <string-array name="Lunch">
+        <item>Baked Crispy Chicken legs</item>
+        <item>Ethiopian Lentils</item>
+        <item>Kelewele</item>
+    </string-array>
+    <string-array name="Drinks">
+        <item>Strawberry Lemonade</item>
+        <item>Grilled Coconut Lemonade</item>
+        <item>Vanilla Milkshake</item>
+        <item>Mimosa Drink</item>
+        <item>Frozen Peach Champagne</item>
+    </string-array>
+    <string-array name="Appetizer">
+        <item>Frozen Shrimps</item>
+        <item>Keleweles</item>
+    </string-array>
+
+    <string name="search_title"></string>
+    <string name="search_hint"></string>
+    <string name="google_places_key">AIzaSyB751wK7v1czrmiNWzyq3q5l5BEZ1rCsqw</string>
+    <string name="title_activity_locate_food">Map</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

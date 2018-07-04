@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dave.foodcrush">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notetable"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DrinksActivity"
+            android:label="Drinks"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".TipsActivity"
+            android:label="Tips"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CuisineActivity"
+            android:label="Cuisines"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".American_cuisineActivity"
+            android:label="American Cuisine"
+            android:parentActivityName=".MainActivity"/>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".AMdetailsActivity" />
+        <activity
+            android:name=".African_CuisineActivity"
+            android:label="African Cuisine"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AFdetailsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DRdetailsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".CategoriesActivity"
+            android:label="Meal Categories"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LunchActivity"
+            android:label="Lunch Meals"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LNdetailsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".BreakfastActivity"
+            android:label="Breakfast Meals"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BFdetailsActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SaveTipActivity"
+            android:label="Add a cooking tip"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ShowTipActivity"
+            android:label="View Saved Tips"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AppetizerActivity" />
+        <activity android:name=".APdeatailsActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

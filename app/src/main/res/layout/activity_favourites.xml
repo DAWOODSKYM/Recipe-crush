@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightboard"
+    tools:context=".TipsActivity">
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_spotify"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginStart="68dp"
+        android:onClick="view"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#00b896"
+        fancy:fb_focusColor="#d82f23"
+        fancy:fb_iconPosition="left"
+        fancy:fb_iconResource="@drawable/view"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="View Added Tips"
+        fancy:fb_textColor="#f4f1f1"
+        tools:ignore="MissingConstraints"
+        />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="155dp"
+        android:layout_marginTop="154dp"
+        android:onClick="add"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_spotify"
+        app:layout_constraintEnd_toEndOf="@+id/btn_spotify"
+        app:layout_constraintStart_toStartOf="@+id/btn_spotify"
+        app:layout_constraintTop_toTopOf="parent"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#00b896"
+        fancy:fb_focusColor="#d82f23"
+        fancy:fb_iconPosition="left"
+        fancy:fb_iconResource="@drawable/add"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Add Tip"
+        fancy:fb_textColor="#FFFFFF"
+        tools:ignore="MissingConstraints" />
+
+
+</android.support.constraint.ConstraintLayout>
